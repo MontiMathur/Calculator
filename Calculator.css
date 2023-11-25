@@ -1,0 +1,177 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+    /* background: linear-gradient(45deg, #453c3c, #282b24); */
+
+}
+.calculator{
+    
+    width: 350px;
+    border: 6px solid rgb(26, 215, 228); /*Changin border for animation*/
+    padding: 10px;
+    box-shadow: 20px 20px 100px 0px rgba(204, 239, 63, 1);
+     
+}
+input{
+    width: 320px;
+    height: 60px;
+    text-align: right;
+    padding: 5px;
+    font-size: 30px;
+    margin: 10px;
+    background-color: transparent;
+    box-shadow: 5px -5px 5px  #f51ef569;  
+    color: white;
+}
+
+input::placeholder{
+  color: white;
+}
+button{
+    
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    /* border-radius: 50%; */
+    text-align: center;
+    font-size: 20px;
+    background-color: transparent;
+    margin: 7px;
+    box-shadow: 5px 5px 5px 5px #1ef5d169;
+    color: white;  
+    /* border: 1px solid red;  */
+} 
+.funcBtn{
+    color: greenyellow;
+}
+.equalBtn{
+    background-color: rgb(223, 194, 4,0.8);
+}
+
+
+/* Ankimation */
+.calculator {
+    border-image: linear-gradient(to right, #558d00, #fe7ba2) 1;
+    border-image-slice: 1;
+    animation: gradient-border 1s infinite linear; /* Apply animation */
+    
+
+
+}
+
+@keyframes gradient-border {
+    0% {
+      border-image-source: linear-gradient(to right, #ffef5f, rgb(123, 228, 254));
+    }
+    25% {
+      border-image-source: linear-gradient(to bottom, #0671ec, #feb27b);
+    }
+    50% {
+      border-image-source: linear-gradient(to left, #fff75f, #fe7bef);
+    }
+    75% {
+      border-image-source: linear-gradient(to top, #ff5fe2, #8f7bfe);
+    }
+    100% {
+      border-image-source: linear-gradient(to right, #ff7e5f, #7bd9fe);
+    }
+  }
+  /* for calculator btn */
+
+button {
+    border-image: linear-gradient(to right, #ff7e5f, #feb47b) 1;
+    border-image-slice: 1;
+    animation: gradient-border 1s infinite linear; /* Apply animation */
+    
+
+
+}
+
+@keyframes gradient-border {
+    0% {
+      border-image-source: linear-gradient(to right, #5fff84, rgb(123, 228, 254));
+    }
+    25% {
+      border-image-source: linear-gradient(to bottom, #5faaff, #feb27b);
+    }
+    50% {
+      border-image-source: linear-gradient(to left, #fff75f, #fe7bef);
+    }
+    75% {
+      border-image-source: linear-gradient(to top, #ff5fe2, #8f7bfe);
+    }
+    100% {
+      border-image-source: linear-gradient(to right, #ff7e5f, #7bd9fe);
+    }
+  }
+
+  /* for input box
+   */
+
+
+input {
+    border-image: linear-gradient(to right, #ff7e5f, #7c0404) 1;
+    border-image-slice: 1;
+    animation: gradient-border 0.1s infinite linear; /* Apply animation */
+    
+
+
+}
+
+@keyframes gradient-border {
+    0% {
+      border-image-source: linear-gradient(to right, #5fff84, rgb(123, 228, 254));
+    }
+    25% {
+      border-image-source: linear-gradient(to bottom, #5faaff, #feb27b);
+    }
+    50% {
+      border-image-source: linear-gradient(to left, #fff75f, #fe7bef);
+    }
+    75% {
+      border-image-source: linear-gradient(to top, #ff5fe2, #8f7bfe);
+    }
+    100% {
+      border-image-source: linear-gradient(to right, #ff7e5f, #7bd9fe);
+    }
+  }
+  button:hover{
+    background-color: rgb(245, 66, 230);
+    box-shadow:5px 5px 5px 10px #a8fa2d;
+
+    border-image: linear-gradient(to right, #ff7e5f, #7c0404) 1;
+    border-image-slice: 1;
+    animation: gradient-border 0.1s infinite linear; /* Apply animation */
+    
+
+
+}
+
+@keyframes gradient-border {
+    0% {
+      border-image-source: linear-gradient(to right, #5fff84, rgb(123, 228, 254));
+    }
+    25% {
+      border-image-source: linear-gradient(to bottom, #5faaff, #feb27b);
+    }
+    50% {
+      border-image-source: linear-gradient(to left, #fff75f, #fe7bef);
+    }
+    75% {
+      border-image-source: linear-gradient(to top, #ff5fe2, #8f7bfe);
+    }
+    100% {
+      border-image-source: linear-gradient(to right, #ff7e5f, #7bd9fe);
+    }
+  
+  }
